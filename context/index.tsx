@@ -1,0 +1,22 @@
+export const data = [
+    { id: 1, shopifyDate: '17713', status: 'Shipped', customer: 'John Doe', email: 'john@example.com', country: 'USA', shipping: 'UPS', source: 'Online' },
+    { id: 2, shopifyDate: '17713', status: 'Pending', customer: 'Alice Smith', email: 'alice@example.com', country: 'Canada', shipping: 'FedEx', source: 'In-store' },
+    { id: 3, shopifyDate: '17712', status: 'Delivered', customer: 'Bob Johnson', email: 'bob@example.com', country: 'UK', shipping: 'DHL', source: 'Online' },
+    { id: 4, shopifyDate: '17712', status: 'Shipped', customer: 'Emma Brown', email: 'emma@example.com', country: 'Australia', shipping: 'USPS', source: 'Online' },
+    { id: 5, shopifyDate: '17711', status: 'Pending', customer: 'Michael Davis', email: 'michael@example.com', country: 'Germany', shipping: 'UPS', source: 'In-store' },
+    { id: 6, shopifyDate: '17711', status: 'Shipped', customer: 'Sarah Wilson', email: 'sarah@example.com', country: 'France', shipping: 'FedEx', source: 'Online' },
+    { id: 7, shopifyDate: '17710', status: 'Delivered', customer: 'David Martinez', email: 'david@example.com', country: 'Spain', shipping: 'DHL', source: 'Online' },
+    { id: 8, shopifyDate: '17710', status: 'Pending', customer: 'Olivia Garcia', email: 'olivia@example.com', country: 'Italy', shipping: 'USPS', source: 'In-store' },
+    { id: 9, shopifyDate: '17709', status: 'Shipped', customer: 'James Rodriguez', email: 'james@example.com', country: 'Mexico', shipping: 'UPS', source: 'Online' },
+    { id: 10, shopifyDate: '17709', status: 'Delivered', customer: 'Sophia Hernandez', email: 'sophia@example.com', country: 'Brazil', shipping: 'FedEx', source: 'Online' },
+    { id: 11, shopifyDate: '17708', status: 'Pending', customer: 'Daniel Lopez', email: 'daniel@example.com', country: 'Argentina', shipping: 'DHL', source: 'In-store' },
+    { id: 12, shopifyDate: '17708', status: 'Shipped', customer: 'Isabella Perez', email: 'isabella@example.com', country: 'Chile', shipping: 'USPS', source: 'Online' },
+    { id: 13, shopifyDate: '17707', status: 'Delivered', customer: 'Alexander Torres', email: 'alexander@example.com', country: 'Colombia', shipping: 'UPS', source: 'Online' },
+    { id: 14, shopifyDate: '17707', status: 'Pending', customer: 'Mia Ramirez', email: 'mia@example.com', country: 'Peru', shipping: 'FedEx', source: 'In-store' },
+    { id: 15, shopifyDate: '17706', status: 'Shipped', customer: 'Charlotte Sanchez', email: 'charlotte@example.com', country: 'Venezuela', shipping: 'DHL', source: 'Online' },
+    { id: 16, shopifyDate: '17706', status: 'Delivered', customer: 'Benjamin Cruz', email: 'benjamin@example.com', country: 'Ecuador', shipping: 'USPS', source: 'Online' },
+    { id: 17, shopifyDate: '17705', status: 'Pending', customer: 'Amelia Torres', email: 'amelia@example.com', country: 'Bolivia', shipping: 'UPS', source: 'In-store' },
+    { id: 18, shopifyDate: '17705', status: 'Shipped', customer: 'Lucas Gomez', email: 'lucas@example.com', country: 'Paraguay', shipping: 'FedEx', source: 'Online' },
+    { id: 19, shopifyDate: '17704', status: 'Delivered', customer: 'Harper Morales', email: 'harper@example.com', country: 'Uruguay', shipping: 'DHL', source: 'Online' },
+    { id: 20, shopifyDate: '17704', status: 'Pending', customer: 'Evelyn Ramirez', email: 'evelyn@example.com', country: 'Panama', shipping: 'USPS', source: 'In-store' }
+];
