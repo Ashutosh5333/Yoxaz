@@ -1,14 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { data } from "../../context/index";
+import ProductSummaryWithPagination from './Pagination';
 
 const Table = ({ searchTerm ,filterCriteria }:any) => {
   const [filteredData, setFilteredData] = useState(data);
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
-    let filtered = data.filter((item) =>
-      item.customer.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-    setFilteredData(filtered);
+
+    let filtered = data.filter((item) => {
+        const customerMatch = item.customer.toLowerCase().includes(searchTerm.toLowerCase());
+         const countryMatch = item.country.toLowerCase().includes(searchTerm.toLowerCase());
+        return customerMatch  || countryMatch;
+    });
+
     if (filterCriteria.status !== 'All') {
         filtered = filtered.filter((item) => item.status === filterCriteria.status);
       }
@@ -20,10 +25,27 @@ const Table = ({ searchTerm ,filterCriteria }:any) => {
       setFilteredData(filtered);
   }, [searchTerm,filterCriteria]);
 
+ const itemsPerPage = 8;
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
+
+  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
+
 
 
   return (
+      <>
+    <ProductSummaryWithPagination
+        itemsPerPage={itemsPerPage}
+        totalItems={filteredData.length}
+        paginate={paginate}
+        currentPage={currentPage}
+      />
+
     <div className="flex w-[90%] shadow-lg rounded-lg px-4 m-auto py-2 border-2 flex-col md:flex-row items-center">
+
+
       <div className="w-[100%] m-auto overflow-scroll">
         <table className="min-w-full divide-y divide-gray-200">
           <thead className="bg-gray-50">
@@ -61,7 +83,7 @@ const Table = ({ searchTerm ,filterCriteria }:any) => {
             </tr>
           </thead>
           <tbody className="bg-white divide-y divide-gray-200">
-            {filteredData.length>0 && filteredData?.map((item, index) => (
+            {currentItems.length>0 && currentItems?.map((item, index) => (
               <tr key={index}>
                 <td className="px-6 py-4 whitespace-nowrap">{item.id}</td>
                 <td className="px-6 py-4 whitespace-nowrap">{item.shopifyDate}</td>
@@ -83,6 +105,7 @@ const Table = ({ searchTerm ,filterCriteria }:any) => {
         </table>
       </div>
     </div>
+    </>
   );
 };
 

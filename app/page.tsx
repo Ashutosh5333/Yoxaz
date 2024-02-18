@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import SearchBar from "./compnents/SearchBar";
 import Table from "./compnents/Table";
+import Header from "./compnents/Header";
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -19,6 +20,7 @@ const Home = () => {
 
   return (
     <main>
+       <Header/>
        <SearchBar onSearch={handleSearch} onFilterChange={handleFilterChange} />
       <Table searchTerm={searchTerm} filterCriteria={filterCriteria} />
     </main>
