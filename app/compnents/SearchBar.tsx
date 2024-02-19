@@ -25,9 +25,9 @@ const SearchBar = ({ onSearch,onFilterChange  }:any) => {
 
 
   return (
-    <div className="border-2 w-[100%] m-auto py-2 border-black">
+    <div className=" w-[100%] m-auto py-2 border-black">
 
-      <div className="flex w-[98%] shadow-lg rounded-lg px-4 m-auto py-4 border-2 flex-col sm:flex-row items-center">
+      <div className="flex w-[90%] shadow-lg rounded-lg px-4 m-auto py-4 border-2 flex-col sm:flex-row items-center">
        
         {/* Search Bar */}
 
@@ -89,7 +89,7 @@ const SearchBar = ({ onSearch,onFilterChange  }:any) => {
         </div>
 
         {/* Search Button */}
-        <button className=" sm:ml-2   mt-4 sm:mt-10 px-20 sm:px-8 py-2  bg-blue-500 text-white rounded-lg focus:outline-none hover:bg-blue-600">
+        <button className=" sm:ml-8   mt-4 sm:mt-10 px-20 sm:px-8 py-2  bg-blue-500 text-white rounded-lg focus:outline-none hover:bg-blue-600">
           Search
         </button>
 

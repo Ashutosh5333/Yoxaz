@@ -13,7 +13,7 @@ const ProductSummaryWithPagination = ({
   );
 
   return (
-    <div className="container mx-auto py-4 px-6 flex items-center justify-between">
+    <div className="container w-[90%] mx-auto py-4 px-6 flex items-center justify-between">
       <div className="flex items-center">
         <h2 className="text-lg font-semibold">Product Summary</h2>
       </div>
