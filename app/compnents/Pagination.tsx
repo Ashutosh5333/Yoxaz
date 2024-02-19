@@ -1,5 +1,5 @@
 import React from "react";
-
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 const ProductSummaryWithPagination = ({
   itemsPerPage,
   totalItems,
@@ -26,18 +26,8 @@ const ProductSummaryWithPagination = ({
           }`}
           onClick={() => currentPage !== 1 && paginate(currentPage - 1)}
         >
-          <svg
-            className="w-4 h-4"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fillRule="evenodd"
-              d="M6.293 5.293a1 1 0 0 1 1.414 1.414L4.414 11H16a1 1 0 1 1 0 2H4.414l3.293 3.293a1 1 0 0 1-1.414 1.414l-5-5a1 1 0 0 1 0-1.414l5-5z"
-              clipRule="evenodd"
-            />
-          </svg>
+         
+          <IoIosArrowBack />
         </div>
 
         <div className="flex">
@@ -45,7 +35,7 @@ const ProductSummaryWithPagination = ({
             <button
               key={number}
               className={`mr-2 p-2 rounded-md focus:outline-none ${
-                currentPage === number 
+                currentPage === number ? "bg-blue-500 text-white" :""
               }`}
               onClick={() => paginate(number)}
             >
@@ -63,18 +53,8 @@ const ProductSummaryWithPagination = ({
             currentPage !== totalPages && paginate(currentPage + 1)
           }
         >
-          <svg
-            className="w-4 h-4"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fillRule="evenodd"
-              d="M13.707 14.293a1 1 0 0 1-1.414 1.414L15.586 11H4a1 1 0 1 1 0-2h11.586l-3.293-3.293a1 1 0 0 1 1.414-1.414l5 5a1 1 0 0 1 0 1.414l-5 5z"
-              clipRule="evenodd"
-            />
-          </svg>
+         
+          <IoIosArrowForward />
         </div>
       </div>
     </div>

@@ -41,7 +41,7 @@ const SearchBar = ({ onSearch,onFilterChange  }:any) => {
               id="search"
               placeholder="Search for name"
               onChange={handleInputChange}
-              className="w-full py-2 px-10 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-400"
+              className="w-full py-2 px-10 border text-sm border-gray-300 rounded-lg focus:outline-none focus:border-blue-400"
             />
             <GoSearch
               className="h-6 w-6 absolute left-3 top-2 text-gray-400 pointer-events-none"
