@@ -32,7 +32,7 @@ const SearchBar = ({ onSearch,onFilterChange  }:any) => {
         {/* Search Bar */}
 
         <div className="w-[100%]  sm:w-1/3">
-          <label htmlFor="search" className="block py-2 px-2 text-sm font-semibold mb-1">
+          <label htmlFor="search" className="block py-2 px-2 text-[.8rem] lg:text-sm font-semibold mb-1">
              What are you looking for ?
           </label>
           <div className="relative">
@@ -52,7 +52,7 @@ const SearchBar = ({ onSearch,onFilterChange  }:any) => {
 
         {/* Category Dropdown */}
 
-        <div className="w-[100%] sm:ml-4 sm:w-1/4">
+        <div className="w-[100%] sm:ml-4 px-2 sm:w-1/4">
           <label htmlFor="category" className="block py-2 px-2 text-sm font-semibold mb-1">
             Category
           </label>
@@ -71,7 +71,7 @@ const SearchBar = ({ onSearch,onFilterChange  }:any) => {
 
         {/* Status Dropdown */}
 
-        <div className=" w-[100%] sm:ml-4 sm:w-1/4">
+        <div className=" w-[100%] px-2 sm:ml-4 sm:w-1/4">
           <label htmlFor="status" className="block py-2 px-2 text-sm font-semibold mb-1">
             Status
           </label>

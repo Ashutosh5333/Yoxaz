@@ -35,7 +35,7 @@ const Table = ({ searchTerm ,filterCriteria }:any) => {
 
 
   return (
-      <>
+      <div className='py-2 pt-4 w-[90%] m-auto border-red-700 shadow-lg rounded-lg'>
     <ProductSummaryWithPagination
         itemsPerPage={itemsPerPage}
         totalItems={filteredData.length}
@@ -43,41 +43,40 @@ const Table = ({ searchTerm ,filterCriteria }:any) => {
         currentPage={currentPage}
       />
 
-    <div className="flex w-[90%] shadow-lg rounded-lg px-4 m-auto py-2 border-2 flex-col md:flex-row items-center">
-
-
+    <div className="flex  px-4 m-auto py-2  flex-col md:flex-row items-center">
+     
       <div className="w-[100%] m-auto overflow-scroll">
         <table className="min-w-full   px-2 divide-gray-200">
           <thead className="bg-gray-50">
-            <tr>
-              <th scope="col" className="px-6 py-3 text-left text-[.6rem] sm:text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <tr className=''>
+              <th scope="col" className="px-6 py-3  text-left text-[.6rem] sm:text-xs font-semibold text-gray-500 uppercase tracking-wider">
                 ID
               </th>
-              <th scope="col" className="px-6 py-3 text-left text-[.6rem] sm:text-xs font-medium text-gray-500 uppercase tracking-wider">
-                SHOPIFY
+              <th scope="col" className="px-6 py-3 text-left text-[.6rem] sm:text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                SHIPIFY
               </th>
-              <th scope="col" className="px-6 py-3 text-left text-[.6rem] sm:text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-6 py-3 text-left text-[.6rem] sm:text-xs font-semibold text-gray-500 uppercase tracking-wider">
                 STATUS
               </th>
-              <th scope="col" className="px-6 py-3 text-left text-[.6rem] sm:text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-6 py-3 text-left text-[.6rem] sm:text-xs font-semibold text-gray-500 uppercase tracking-wider">
                 CUSTOMER
               </th>
-              <th scope="col" className="px-6 py-3 text-left text-[.6rem] sm:text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-6 py-3 text-left text-[.6rem] sm:text-xs font-semibold text-gray-500 uppercase tracking-wider">
                 EMAIL
               </th>
-              <th scope="col" className="px-6 py-3 text-left text-[.6rem] sm:text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-6 py-3 text-left text-[.6rem] sm:text-xs font-semibold text-gray-500 uppercase tracking-wider">
                 COUNTRY
               </th>
-              <th scope="col" className="px-6 py-3 text-left text-[.6rem] sm:text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-6 py-3 text-left text-[.6rem] sm:text-xs font-semibold text-gray-500 uppercase tracking-wider">
                 SHIPPING 
               </th>
-              <th scope="col" className="px-6 py-3 text-left text-[.6rem] sm:text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-6 py-3 text-left text-[.6rem] sm:text-xs font-semibold text-gray-500 uppercase tracking-wider">
                 SOURCE
               </th>
-              <th scope="col" className="px-6 py-3 text-left text-[.6rem] sm:text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-6 py-3 text-left text-[.6rem] sm:text-xs font-semibold text-gray-500 uppercase tracking-wider">
                 ORDER TYPE
               </th>
-              <th scope="col" className="px-6 py-3 text-left text-[.6rem] sm:text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-6 py-3 text-left text-[.6rem] sm:text-xs font-semibold text-gray-500 uppercase tracking-wider">
                 ACTIONS
               </th>
             </tr>
@@ -105,7 +104,7 @@ const Table = ({ searchTerm ,filterCriteria }:any) => {
         </table>
       </div>
     </div>
-    </>
+    </div>
   );
 };
 

@@ -13,7 +13,7 @@ const ProductSummaryWithPagination = ({
   );
 
   return (
-    <div className="container w-[90%] mx-auto py-4 px-6 flex items-center justify-between">
+    <div className="container  mx-auto py-4 px-6 flex items-center justify-between">
       <div className="flex items-center">
         <h2 className="text-lg font-semibold">Product Summary</h2>
       </div>
@@ -35,7 +35,7 @@ const ProductSummaryWithPagination = ({
             <button
               key={number}
               className={`mr-2 p-2 rounded-md focus:outline-none ${
-                currentPage === number ? "bg-blue-500 text-white" :""
+                currentPage === number ? "bg-blue-500 px-4 text-white" :""
               }`}
               onClick={() => paginate(number)}
             >
