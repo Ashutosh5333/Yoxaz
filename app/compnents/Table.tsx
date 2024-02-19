@@ -35,7 +35,7 @@ const Table = ({ searchTerm ,filterCriteria }:any) => {
 
 
   return (
-      <div className='py-2 pt-4 w-[90%] m-auto border-red-700 shadow-lg rounded-lg'>
+      <div className='py-2 pt-4 w-[100%] px-2 sm:w-[90%] m-auto border-red-700 shadow-lg rounded-lg'>
     <ProductSummaryWithPagination
         itemsPerPage={itemsPerPage}
         totalItems={filteredData.length}
